@@ -52,6 +52,9 @@ function mostrarCasas() {
 
 // Funcion para crear una tabla dinámicamente
 function crearTabla(datos) {
+    let wrapper = document.createElement("div");
+    wrapper.className = "table-container";
+
     let tabla = document.createElement("table");
 
     // Encabezados de la tabla
@@ -80,7 +83,8 @@ function crearTabla(datos) {
         crearFila(casa, tabla);
     })
 
-    return tabla;
+    wrapper.appendChild(tabla);
+    return wrapper;
 }
 
 // Funcion para crear una fila y añadirla a la tabla

@@ -75,6 +75,20 @@ tr:hover {
   background-color: #3f3f3f;
 }
 
+/* Contenedor responsive para tabla */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  table {
+    min-width: 700px;
+  }
+}
+
+
+/* Mensaje de error */
 .error {
   text-align: center;
   color: #ff4c4c;
@@ -83,6 +97,7 @@ tr:hover {
   font-size: 14px;
 }
 
+/* Mensaje de carga */
 .loading {
   text-align: center;
   font-weight: bold;
