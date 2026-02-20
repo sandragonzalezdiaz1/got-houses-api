@@ -11,6 +11,9 @@ function obtenerCasas(event) {
     // Obtenemos la region seleccionada 
     let region = document.getElementById("region").value;
 
+    // Mostramos mensaje de carga
+    document.getElementById("demo").innerHTML = "<p class='loading'>⌛Cargando casas...</p>";
+
     // Creamos el objeto XMLHttpRequest
     let xhr = new XMLHttpRequest();
     let url = "https://www.anapioficeandfire.com/api/houses?region=" + encodeURIComponent(region) + "&pageSize=20";
