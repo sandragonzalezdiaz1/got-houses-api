@@ -6,7 +6,7 @@ body {
 }
 
 .houses-title {
-  background-image: url("../assets/houses.jpg");
+  background-image: url("/assets/houses.jpg");
   background-size: contain; /* Muestra la imagen completa */
   background-repeat: no-repeat;
   background-position: center;
